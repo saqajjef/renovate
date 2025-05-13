@@ -30,7 +30,7 @@ pipeline {
     }
 
     options {
-        gitLabConnection('git.example.com')
+        //gitLabConnection('git.example.com')
         disableConcurrentBuilds()
         timeout(time: 1, unit: 'HOURS')
         ansiColor('xterm')
