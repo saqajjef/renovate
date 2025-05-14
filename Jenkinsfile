@@ -4,7 +4,7 @@ pipeline {
     agent {
         docker {
             image 'renovate/renovate:40.11.10'
-            args '-v /tmp:/tmp --group-add 0 --entrypoint=sh'
+            args '-v /tmp:/tmp --group-add 0'
         }
     }
 
