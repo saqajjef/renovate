@@ -51,7 +51,7 @@ pipeline {
 
         stage('renovate') {
             steps {
-                sh "renovate --log-file renovate.log --log-file-level debug ${params.RENOVATE_EXTRA_FLAGS}"
+                sh "renovate ${params.RENOVATE_EXTRA_FLAGS}"
             }
         }
     }
